@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHeader">#003399</color>
+    <color name="colorRow">#3399ff</color>
+    <color name="listText">#b3cedc</color>
+    <color name="mapText">#d7e9fe</color>
+    <color name="mapBG">#006699</color>
+</resources>
