@@ -9,9 +9,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.stillsix.wheresthepartyat.MainActivity">
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/globeicon"
+        tools:src="@drawable/globeicon"
         android:onClick="callMap"/>
 
 </RelativeLayout>

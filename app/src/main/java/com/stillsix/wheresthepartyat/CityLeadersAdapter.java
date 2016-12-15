@@ -9,15 +9,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 
 public class CityLeadersAdapter extends ArrayAdapter {
     Context context;
     int layoutResourceId;
-    CityLeadersData data[] = null;
+    CityLeadersDataArrayHC data[] = null;
 
-    public CityLeadersAdapter(Context context, int layoutResourceId, CityLeadersData[] data) {
+    public CityLeadersAdapter(Context context, int layoutResourceId, CityLeadersDataArrayHC[] data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;
@@ -43,7 +41,7 @@ public class CityLeadersAdapter extends ArrayAdapter {
             holder = (PlayerHolder) row.getTag();
         }
 
-        CityLeadersData cityleaders = data[position];
+        CityLeadersDataArrayHC cityleaders = data[position];
         holder.cityIcon.setImageResource(cityleaders.icon);
         holder.txtCityName.setText(cityleaders.cityName);
         holder.txtPlayerCount.setText(cityleaders.playerCount+"");

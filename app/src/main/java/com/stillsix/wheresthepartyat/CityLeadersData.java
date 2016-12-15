@@ -1,29 +1,24 @@
 package com.stillsix.wheresthepartyat;
 
 /**
- * Created by sean.gallagher on 12/14/16.
+ * Created by sean.gallagher on 12/15/16.
  */
 public class CityLeadersData {
-    public int bfgUID;
-    public int icon;
-    public String cityName;
-    public int playerCount;
+    private int mCountryTotal;
+    private Cities[] mCities;
 
-
-    public CityLeadersData(){
-        super();
+    public int getCountryTotal() {
+        return mCountryTotal;
     }
 
-    public CityLeadersData(int bfgUID, int icon, String cityName, int playerCount) {
-        super();
-        this.bfgUID = bfgUID;
-        this.icon = icon;
-        this.cityName = cityName;
-        this.playerCount = playerCount;
+    public void setCountryTotal(int countryTotal) {
+        mCountryTotal = countryTotal;
+    }
+    public Cities[] getCities() {
+        return mCities;
     }
 
-    @Override
-    public String toString() {
-        return this.cityName ;
+    public void setCities(Cities[] cities) {
+        mCities = cities;
     }
 }
